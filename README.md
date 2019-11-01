@@ -3,9 +3,13 @@ Wordpress Template for Simple ITec
 
 ## body_class()
 With the flowing input:
-  <code <body <?php body_class(); ?>> >
+'''
+  <body <?php body_class(); ?>>
+'''
 The result is:
-  <code><body class="home blog"></code>
+'''
+  <body class="home blog">
+'''
   
 ## Body Structure
 <code>
