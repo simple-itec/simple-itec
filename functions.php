@@ -18,6 +18,7 @@ function simpleitec_config() {
         'width' => 1920
     );
     add_theme_support('custom-header', $args);
+    add_theme_support('post-thumbnails');
 
 }
 add_action('after_setup_theme','simpleitec_config',0);
