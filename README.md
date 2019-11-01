@@ -3,11 +3,12 @@ Wordpress Template for Simple ITec
 
 ## body_class()
 With the flowing input:
-  <body <?php body_class(); ?>>
+  <code><body <?php body_class(); ?>></code>
 The result is:
-  <body class="home blog">
+  <code><body class="home blog"></code>
   
 ## Body Structure
+<code>
 <header>
   <section>(top-bar)
   <section>(menu-area)
@@ -22,3 +23,4 @@ The result is:
       <div>(news)
     <section>(map)
 <footer>
+</code>
