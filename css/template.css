@@ -1,4 +1,18 @@
-.top-bar {
-    background-color: red;
-    height: 70px;
+/*
+ * Show the block color in the Top Bar
+ */
+.social-media-icons{
+    background: green;
+    height: 30px;
+}
+.search{
+    background: lightgreen;
+    height: 30px;
+}
+/*
+ * Put the main menu on a line
+ */
+.main-menu ul li,
+.footer-menu ul li{
+    display: inline;
 }
