@@ -3,7 +3,7 @@ Wordpress Template for Simple ITec
 
 ## body_class()
 With the flowing input:
-  <code><body <?php body_class(); ?>></code>
+  <code <body <?php body_class(); ?>> >
 The result is:
   <code><body class="home blog"></code>
   
