@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+<!-- img-fluid: image responsive size / get the header images -->
+<img class="img-fluid" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="">
 	<div class="content-area">
 		<main>
 			<section class="slide">
