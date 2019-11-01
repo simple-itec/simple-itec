@@ -3,16 +3,16 @@ Wordpress Template for Simple ITec
 
 ## body_class()
 With the flowing input:
-'''
+```
   <body <?php body_class(); ?>>
-'''
+```
 The result is:
-'''
+```
   <body class="home blog">
-'''
+```
   
 ## Body Structure
-<code>
+```
 <header>
   <section>(top-bar)
   <section>(menu-area)
