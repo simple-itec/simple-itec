@@ -27,4 +27,4 @@ The result is:
       <div>(news)
     <section>(map)
 <footer>
-</code>
+
