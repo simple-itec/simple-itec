@@ -1,5 +1,4 @@
 <article <?php post_class() ?>>
-    <?php echo get_post_format(); ?>
     <h2><?php the_title(); ?></h2>
     <?php the_post_thumbnail('thumbnail'); ?>
     <p>Posted by <?php the_author_posts_link(); ?></p>
