@@ -34,7 +34,7 @@
 							}
 							?>
 						</div>
-						<aside class="sidebar col-md-3">Sidebar</aside>
+						<aside class="sidebar col-md-3"><?php get_sidebar('blog'); ?></aside>
 					</div>
 				</div>
 			</section>

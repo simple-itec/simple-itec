@@ -48,4 +48,37 @@ function simpleitec_sidebars() {
             'after_title' => '</h2>'
         )
     );
+    register_sidebar(
+        array(
+            'name' => 'Service 1',
+            'id' => 'service-1',
+            'description' => 'First Service Area.',
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name' => 'Service 2',
+            'id' => 'service-2',
+            'description' => 'Second Service Area.',
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name' => 'Service 3',
+            'id' => 'service-3',
+            'description' => 'Third Service Area.',
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
 }
