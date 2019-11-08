@@ -47,14 +47,47 @@
                             <div class="container">
 								<div class="row">
 									<?php
-									// The Query
-									$featured = new WP_Query( array( 'author_name' => 'simple-itec' ) ); 
+									// The first Loop
+									$args = array(
+										'author_name' => 'simple-itec',
+										'posts_per_page' => 1,
+										'category_name' => 'auto,projets,web'
+									);
+									$featured = new WP_Query( $args ); 
 									if ( $featured->have_posts() ) {
 										while ( $featured->have_posts() ) {
 											$featured->the_post();
 										?>
 										<div class="col-12">
 											<?php get_template_part( 'template-parts/content', 'featured' ); ?>
+ 										</div>
+										<?php
+										}
+									} else {
+										echo 'No posts found.';
+									}
+									/* Restore original Post Data 
+									 * NB: Because we are using new WP_Query we aren't stomping on the 
+									 * original $wp_query and it does not need to be reset with
+									 * wp_reset_query(). We just need to set the post data back up with
+									 * wp_reset_postdata().
+									 */
+									wp_reset_postdata();
+
+									// The Secondary Loop
+									$args = array(
+										'post_type' => 'post',
+										'posts_per_page' => 2,
+										'category_name' => 'auto,projets,web',
+										'offset' => 1			// Do not display the first post
+									);
+									$secondary = new WP_Query( $args ); 
+									if ( $secondary->have_posts() ) {
+										while ( $secondary->have_posts() ) {
+											$secondary->the_post();
+										?>
+										<div class="col-sm-6">
+											<?php get_template_part( 'template-parts/content', 'secondary' ); ?>
  										</div>
 										<?php
 										}

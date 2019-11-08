@@ -1,4 +1,4 @@
-<article <?php post_class( array( 'class' => 'featured' ) ); ?>>
+<article <?php post_class( array( 'class' => 'secondary' ) ); ?>>
     <h2><?php the_title(); ?></h2>
     <div class="thumbnail">
         <?php the_post_thumbnail( 'large', array( 'class' => 'img-fluid' ) ) ?>
@@ -9,7 +9,6 @@
             Categories: <?php the_category( ' ' ); ?>
             <?php the_tags( 'Tags: ', ', ', ''); ?>
         </p>
-        <p><?php the_date(); ?></p>
     </div>
     <p><?php the_excerpt(); ?></p>
 </article>
